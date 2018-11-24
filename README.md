@@ -1,17 +1,17 @@
-#Documentation
+# Documentation
 This project is a boiler plate react app ready to be used for any react app projects.
 
-##How to install?
+## How to install?
 `npm install`
 
-##How to Start?
+## How to Start?
 `npm start`
 
-##Where does it start?
+## Where does it start?
 [https://localhost:9000/](https://localhost:9000/)
 
 
-##Modules used:
+### Modules used:
 - Babel7
 - Webpack4
 - React16
