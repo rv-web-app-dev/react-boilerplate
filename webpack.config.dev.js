@@ -3,10 +3,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode: 'development',
-    entry: './src/index.js',
+    entry: {app:'./src/index.js', print:'./src/components/Print.js'},
     output: {
         path: path.join(__dirname, '/dist'),
-        filename: '[name].[hash].js'
+        filename: '[name].[hash].js',
+        publicPath: '/'
     },
     module: {
         rules: [
@@ -23,21 +24,41 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: [
-                  { loader: 'style-loader' },
-                  {
-                    loader: 'css-loader',
-                    options: {
-                      modules: true
-                    }
-                  },
-                  { loader: 'sass-loader' }
+                    'style-loader',
+                    'css-loader'
+                  ]
+            },
+            {
+                test: /\.(png|svg|jpg|gif)$/,
+                use: [
+                  'file-loader'
                 ]
-              }
+            },    
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/,
+                use: [
+                  'file-loader'
+                ]
+            },
+            {
+                test: /\.(csv|tsv)$/,
+                use: [
+                    'csv-loader'
+                ]
+            },       
+            {
+                test: /\.xml$/,
+                use: [
+                    'xml-loader'
+                ]
+            }                       
         ]
     },
+    devtool: 'inline-source-map',
     plugins: [
         new HtmlWebpackPlugin({
-            template: './src/index.html'
+            template: './src/index.html',
+            inject: true,            
         })
     ],
     devServer: {
@@ -46,6 +67,7 @@ module.exports = {
         port: 9000,
         historyApiFallback: true,
         https: true,
-        open: true
+        open: true,
+        contentBase: './dist'
     }
 }
