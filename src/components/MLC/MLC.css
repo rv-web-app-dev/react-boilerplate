@@ -1,0 +1,30 @@
+.container {
+    width: 300px;
+    background-color: #F4F4F4;
+    height: 300px;
+    padding: 50px;
+    margin: 20px;
+    font-family: Lato;
+}
+
+.icon {
+    color: #ce0058;
+    font-size: 3em;
+}
+
+.header {
+    font-size: 1.5em;
+}
+
+.description {
+    max-width: 80%;
+    text-align: justify;
+}
+
+.link {
+    color: #ce0058;
+    font-weight: bolder;
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 4px solid #ce0058;
+}
