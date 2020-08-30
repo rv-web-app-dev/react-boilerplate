@@ -85,6 +85,7 @@ Jest Testing examples can be found in project react-testing.
 
 #### Assertions using expect:
 [Jest Expect examples](https://www.w3resource.com/jest/expect.php)
+[Jest Mock](https://jestjs.io/docs/en/mock-functions)
 
 ### Modules used:
 - Babel7
