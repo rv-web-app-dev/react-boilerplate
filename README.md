@@ -80,6 +80,12 @@ During development, if yiu need to make changes to Babel configurations using th
 
 [StackOverFlow Answer](https://stackoverflow.com/questions/53558916/babel-7-referenceerror-regeneratorruntime-is-not-defined)
 
+### Testing:
+Jest Testing examples can be found in project react-testing.
+
+#### Assertions using expect:
+[Jest Expect examples](https://www.w3resource.com/jest/expect.php)
+[Jest Mock](https://jestjs.io/docs/en/mock-functions)
 
 ### Modules used:
 - Babel7
