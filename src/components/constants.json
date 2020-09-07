@@ -1,3 +1,11 @@
 {
-    "environment":"development"
+  "environment": "development",
+  "number": 1000,
+  "array": [1, 2, 3, 4],
+  "level1": {
+    "level2": "This is text from first nesting",
+    "level2a": {
+      "level3": "This is text from second nesting"
+    }
+  }
 }

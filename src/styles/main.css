@@ -1,26 +1,66 @@
 @font-face {
-      font-family: 'HussarBoldWeb';
-      src:  url('./fonts/HussarBoldWeb.woff') format('woff');
-      font-weight: 600;
-      font-style: normal;
-    }
+  font-family: "HussarBoldWeb";
+  src: url("../assets/fonts/HussarBoldWeb.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
 
+/* Custom font usage example*/
+.applyCustomFontFamily {
+  font-family: "HussarBoldWeb";
+}
+.use-custom-font {
+  font-family: "HussarBoldWeb";
+  color: green;
+  font-size: small;
+  padding: 20px;
+  border: 2px solid red;
+}
+/* */
 h1 {
-    border: 2px solid blue;
-    font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid blue;
+  font-family: Arial, Helvetica, sans-serif;
 }
-h2{
-    background-color: burlywood;
+h2 {
+  background-color: burlywood;
 }
-.tagline{
-    color: chocolate;
-}
-
-.applyCustomFontFamily{
-    font-family: 'HussarBoldWeb';
+.tagline {
+  color: chocolate;
 }
 
-.fixedBox{
-    width: 150px;
-    height: auto;
+.img-width--fixed {
+  width: 150px;
+  height: auto;
+}
+/* STYLE ELEMENT FOR FILE LOADER DEMO*/
+.fl-demo {
+  border: 3px solid green;
+  margin: 10px 5px;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+/*JSON FILE LOAD STYLE*/
+.json-file--demo {
+  background: #d7d2c9;
+  margin: 10px 5px;
+  padding: 15px;
+}
+/*XML FILE LOAD STYLE*/
+.xml-file--demo {
+  background: #e7a61a;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  color: brown;
+  font-weight: 700;
+  line-height: 15px;
+  padding: 15px;
+}
+/*COMMON REUSABLE STYLES*/
+.form-2Column {
+  display: flex;
+}
+.form-2Column div:nth-child(1) {
+  width: 30%;
+}
+.form-2Column div:nth-child(2) {
+  width: 70%;
 }
