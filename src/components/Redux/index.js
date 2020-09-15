@@ -7,8 +7,8 @@ const Redux = () => {
   return (
     <Fragment>
       <PlainRedux/>
-      <ReduxThunk/>
-      <ReduxSaga/>
+{/*       <ReduxThunk/>
+      <ReduxSaga/> */}
     </Fragment>
   )
 }
