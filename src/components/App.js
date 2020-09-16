@@ -17,6 +17,7 @@ import Start from './History/Start';
 import Route1 from './History/Route1';
 import Route2 from "./History/Route2";
 import End from "./History/End";
+import TruthyFalsy from './TruthyFalsy';
 
 export const App = ({ isBoilerplate }) => (
   <Fragment>
@@ -44,6 +45,7 @@ export const App = ({ isBoilerplate }) => (
             return <div>Placeholder for adding a component for this route</div>;
           }}
         />
+        <Route path="/truthOrFalse" component={TruthyFalsy}/>
       </Switch>
     </Router>
   </Fragment>
